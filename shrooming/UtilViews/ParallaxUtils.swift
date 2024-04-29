@@ -59,7 +59,6 @@ struct ScrollZoomParallaxObject: View {
     }
 }
 
-import SwiftUI
 
 struct ScrollMoveParallaxObject: View {
     let imageAsset: String
@@ -126,7 +125,6 @@ struct ScrollFadeParallaxObject: View {
     }
 }
 
-
 struct ScrollShakeParallaxObject: View {
     let imageAsset: String
     let shakeStrength: CGFloat
@@ -151,6 +149,35 @@ struct ScrollShakeParallaxObject: View {
             
             // Apply a sine wave based shake based on the scroll position
             return sin(relativeOffset / 30) * shakeStrength
+        }
+        return 0
+    }
+}
+
+struct ScrollRotateParallaxObject: View {
+    let imageAsset: String
+    let rotationMultiplier: CGFloat
+    
+    var body: some View {
+        GeometryReader { geometry in
+            Image(imageAsset)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .rotationEffect(.degrees(calculateRotation(geometry: geometry)))
+        }
+    }
+    
+    private func calculateRotation(geometry: GeometryProxy) -> Double {
+        let yOffset = geometry.frame(in: .global).minY
+        let screenHeight = UIScreen.main.bounds.height
+        
+        // Only apply rotation effect when the image is within the visible screen area
+        if yOffset > -geometry.size.height && yOffset < screenHeight {
+            let triggerOffset = screenHeight * PARALLAX_SCREEN_PERCENTAGE
+            let relativeOffset = yOffset - triggerOffset
+            
+            // Calculate the rotation based on the scroll position and multiplier
+            return Double(relativeOffset * rotationMultiplier)
         }
         return 0
     }
