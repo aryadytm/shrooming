@@ -11,20 +11,13 @@ struct Page3Part1: View {
     var body: some View {
         ZStack(alignment: .center) {
             
-            StaticObject(assetName: "page_2_layer_8_layer_0")
+            StaticObject(assetName: "page_3_layer_0")
 
             ScrollZoomParallaxObject(
-                imageAsset: "page_2_layer_8_layer_1",
-                zoomMultiplier: 0.15
-            )
-            ScrollZoomParallaxObject(
-                imageAsset: "page_2_layer_8_layer_2",
-                zoomMultiplier: 0.15
-            )
-            ScrollZoomParallaxObject(
-                imageAsset: "page_2_layer_8_layer_3",
+                imageAsset: "page_3_layer_1",
                 zoomMultiplier: 0.3
             )
+            .opacity(1)
             
         }
     }

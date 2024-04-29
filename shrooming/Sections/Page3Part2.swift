@@ -9,10 +9,25 @@ import SwiftUI
 
 struct Page3Part2: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .center) {
+            
+            StaticObject(assetName: "page_3_1_layer_1")
+            
+            ScrollZoomParallaxObject(
+                imageAsset: "page_3_1_layer_10",
+                zoomMultiplier: 0.3
+            )
+            
+        }
     }
 }
 
 #Preview {
-    Page3Part2()
+    ScrollView {
+        VStack {
+            Page3Part2()
+                .padding(.top, 500)
+                .padding(.bottom, 800)
+        }
+    }
 }

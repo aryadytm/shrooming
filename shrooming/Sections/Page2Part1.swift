@@ -36,7 +36,7 @@ struct Page2Part1: View {
                 // Your code for each item here
                 ScrollMoveParallaxObject(
                     imageAsset: "page_2_layer_3_layer_\(i)",
-                    speedMultiplier: -0.1,
+                    speedMultiplier: -0.077,
                     isVertical: true
                 )
                 .offset(y: 75)

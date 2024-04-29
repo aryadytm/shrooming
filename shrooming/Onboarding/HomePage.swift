@@ -9,14 +9,31 @@ import SwiftUI
 
 struct HomePage: View {
     @ObservedObject var viewModel: PageControllerViewModel
+    @State private var opacity: Double = 0
     
     var body: some View {
         VStack {
-            Image("onb_above_play")
-            Image("onb_play_btn")
+            Image("onb_illust")
+                .resizable()
+                .scaledToFit()
+            Image("onb_play")
+                .resizable()
+                .frame(width: 60, height: 60)
+                .padding(.top)
                 .onTapGesture {
-                    viewModel.setCurrentPage(page: .headset)
+                    withAnimation(.easeOut(duration: 1.0)) {
+                        opacity = 0
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        viewModel.setCurrentPage(page: .suggestion)
+                    }
                 }
+        }
+        .opacity(opacity)
+        .onAppear {
+            withAnimation(.easeIn(duration: 1.0)) {
+                opacity = 1.0
+            }
         }
     }
 }

@@ -11,6 +11,22 @@
 		E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F802BDCCA10008DE37F /* ContentView.swift */; };
 		E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A69F822BDCCA12008DE37F /* Assets.xcassets */; };
 		E6A69F862BDCCA12008DE37F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A69F852BDCCA12008DE37F /* Preview Assets.xcassets */; };
+		E6A69F8D2BDCCAA9008DE37F /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F8C2BDCCAA9008DE37F /* PageController.swift */; };
+		E6A69F912BDCDF73008DE37F /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F902BDCDF73008DE37F /* SplashPage.swift */; };
+		E6A69F932BDCDF9B008DE37F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F922BDCDF9B008DE37F /* HomePage.swift */; };
+		E6A69F952BDCDFC1008DE37F /* SuggestionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F942BDCDFC1008DE37F /* SuggestionPage.swift */; };
+		E6A69F972BDCE1C9008DE37F /* PageControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F962BDCE1C9008DE37F /* PageControllerViewModel.swift */; };
+		E6A69F992BDCF52A008DE37F /* StoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F982BDCF52A008DE37F /* StoryPage.swift */; };
+		E6A69F9B2BDD2E23008DE37F /* Page1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F9A2BDD2E23008DE37F /* Page1.swift */; };
+		E6A69F9E2BDE7F94008DE37F /* ParallaxScrollableViewLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F9D2BDE7F94008DE37F /* ParallaxScrollableViewLegacy.swift */; };
+		E6A69FA02BDE9040008DE37F /* LearnParallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F9F2BDE9040008DE37F /* LearnParallax.swift */; };
+		E6A69FA22BDE9601008DE37F /* ParallaxUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA12BDE9601008DE37F /* ParallaxUtils.swift */; };
+		E6A69FA42BDE9A39008DE37F /* Page2Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA32BDE9A39008DE37F /* Page2Part1.swift */; };
+		E6A69FA62BDEA0E9008DE37F /* Page2Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA52BDEA0E9008DE37F /* Page2Part2.swift */; };
+		E6A69FA82BDEA392008DE37F /* Page3Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA72BDEA392008DE37F /* Page3Part1.swift */; };
+		E6A69FAA2BDEA514008DE37F /* Page3Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA92BDEA514008DE37F /* Page3Part2.swift */; };
+		E6A69FAC2BDEA556008DE37F /* Page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FAB2BDEA556008DE37F /* Page4.swift */; };
+		E6A69FAE2BDEA67C008DE37F /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FAD2BDEA67C008DE37F /* Page5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +35,22 @@
 		E6A69F802BDCCA10008DE37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6A69F822BDCCA12008DE37F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6A69F852BDCCA12008DE37F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E6A69F8C2BDCCAA9008DE37F /* PageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		E6A69F902BDCDF73008DE37F /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
+		E6A69F922BDCDF9B008DE37F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		E6A69F942BDCDFC1008DE37F /* SuggestionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionPage.swift; sourceTree = "<group>"; };
+		E6A69F962BDCE1C9008DE37F /* PageControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControllerViewModel.swift; sourceTree = "<group>"; };
+		E6A69F982BDCF52A008DE37F /* StoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPage.swift; sourceTree = "<group>"; };
+		E6A69F9A2BDD2E23008DE37F /* Page1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1.swift; sourceTree = "<group>"; };
+		E6A69F9D2BDE7F94008DE37F /* ParallaxScrollableViewLegacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollableViewLegacy.swift; sourceTree = "<group>"; };
+		E6A69F9F2BDE9040008DE37F /* LearnParallax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnParallax.swift; sourceTree = "<group>"; };
+		E6A69FA12BDE9601008DE37F /* ParallaxUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxUtils.swift; sourceTree = "<group>"; };
+		E6A69FA32BDE9A39008DE37F /* Page2Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2Part1.swift; sourceTree = "<group>"; };
+		E6A69FA52BDEA0E9008DE37F /* Page2Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2Part2.swift; sourceTree = "<group>"; };
+		E6A69FA72BDEA392008DE37F /* Page3Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3Part1.swift; sourceTree = "<group>"; };
+		E6A69FA92BDEA514008DE37F /* Page3Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3Part2.swift; sourceTree = "<group>"; };
+		E6A69FAB2BDEA556008DE37F /* Page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4.swift; sourceTree = "<group>"; };
+		E6A69FAD2BDEA67C008DE37F /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +83,17 @@
 		E6A69F7D2BDCCA10008DE37F /* shrooming */ = {
 			isa = PBXGroup;
 			children = (
-				E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */,
-				E6A69F802BDCCA10008DE37F /* ContentView.swift */,
 				E6A69F822BDCCA12008DE37F /* Assets.xcassets */,
 				E6A69F842BDCCA12008DE37F /* Preview Content */,
+				E6A69F8E2BDCD847008DE37F /* Sections */,
+				E6A69F8F2BDCDF4D008DE37F /* Onboarding */,
+				E6A69F9C2BDE7F6A008DE37F /* UtilViews */,
+				E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */,
+				E6A69F802BDCCA10008DE37F /* ContentView.swift */,
+				E6A69F8C2BDCCAA9008DE37F /* PageController.swift */,
+				E6A69F962BDCE1C9008DE37F /* PageControllerViewModel.swift */,
+				E6A69F982BDCF52A008DE37F /* StoryPage.swift */,
+				E6A69F9F2BDE9040008DE37F /* LearnParallax.swift */,
 			);
 			path = shrooming;
 			sourceTree = "<group>";
@@ -65,6 +104,39 @@
 				E6A69F852BDCCA12008DE37F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E6A69F8E2BDCD847008DE37F /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				E6A69F9A2BDD2E23008DE37F /* Page1.swift */,
+				E6A69FA32BDE9A39008DE37F /* Page2Part1.swift */,
+				E6A69FA52BDEA0E9008DE37F /* Page2Part2.swift */,
+				E6A69FA72BDEA392008DE37F /* Page3Part1.swift */,
+				E6A69FA92BDEA514008DE37F /* Page3Part2.swift */,
+				E6A69FAB2BDEA556008DE37F /* Page4.swift */,
+				E6A69FAD2BDEA67C008DE37F /* Page5.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		E6A69F8F2BDCDF4D008DE37F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E6A69F902BDCDF73008DE37F /* SplashPage.swift */,
+				E6A69F922BDCDF9B008DE37F /* HomePage.swift */,
+				E6A69F942BDCDFC1008DE37F /* SuggestionPage.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E6A69F9C2BDE7F6A008DE37F /* UtilViews */ = {
+			isa = PBXGroup;
+			children = (
+				E6A69F9D2BDE7F94008DE37F /* ParallaxScrollableViewLegacy.swift */,
+				E6A69FA12BDE9601008DE37F /* ParallaxUtils.swift */,
+			);
+			path = UtilViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +209,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A69FA22BDE9601008DE37F /* ParallaxUtils.swift in Sources */,
+				E6A69F992BDCF52A008DE37F /* StoryPage.swift in Sources */,
+				E6A69F932BDCDF9B008DE37F /* HomePage.swift in Sources */,
+				E6A69F9E2BDE7F94008DE37F /* ParallaxScrollableViewLegacy.swift in Sources */,
+				E6A69FAA2BDEA514008DE37F /* Page3Part2.swift in Sources */,
+				E6A69F952BDCDFC1008DE37F /* SuggestionPage.swift in Sources */,
+				E6A69F8D2BDCCAA9008DE37F /* PageController.swift in Sources */,
+				E6A69FAC2BDEA556008DE37F /* Page4.swift in Sources */,
+				E6A69FA02BDE9040008DE37F /* LearnParallax.swift in Sources */,
+				E6A69FA42BDE9A39008DE37F /* Page2Part1.swift in Sources */,
+				E6A69FAE2BDEA67C008DE37F /* Page5.swift in Sources */,
 				E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */,
+				E6A69F912BDCDF73008DE37F /* SplashPage.swift in Sources */,
+				E6A69FA62BDEA0E9008DE37F /* Page2Part2.swift in Sources */,
+				E6A69FA82BDEA392008DE37F /* Page3Part1.swift in Sources */,
+				E6A69F972BDCE1C9008DE37F /* PageControllerViewModel.swift in Sources */,
 				E6A69F7F2BDCCA10008DE37F /* shroomingApp.swift in Sources */,
+				E6A69F9B2BDD2E23008DE37F /* Page1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +398,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

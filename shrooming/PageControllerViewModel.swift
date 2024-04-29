@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+class PageControllerViewModel: ObservableObject {
+    @Published var currentPage: Page = .splash
+    
+    enum Page {
+        case splash
+        case home
+        case suggestion
+        case story
+    }
+    
+    func setCurrentPage(page: Page) {
+        currentPage = page
+    }
+}

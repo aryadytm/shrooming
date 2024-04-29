@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct PageController: View {
-    var currentView: any View = EmptyView()
+    @StateObject var viewModel = PageControllerViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        switch viewModel.currentPage {
+            case .splash:
+                SplashPage(viewModel: viewModel)
+            case .home:
+                HomePage(viewModel: viewModel)
+            case .suggestion:
+                SuggestionPage(viewModel: viewModel) 
+            case .story:
+                StoryPage()
+            }
     }
 }
 
