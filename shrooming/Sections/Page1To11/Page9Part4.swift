@@ -17,7 +17,10 @@ struct Page9Part4: View {
             ScrollZoomParallaxObject(imageAsset: "page_9_study", zoomMultiplier: 0)
                 .clipped()
             
-            ScrollZoomParallaxObject(imageAsset: "page_9_light", zoomMultiplier: 0)
+//            ScrollZoomParallaxObject(imageAsset: "page_9_light", zoomMultiplier: 0)
+//                .clipped()
+            
+            ScrollShakeParallaxObject(imageAsset: "page_9_light", shakeStrength: 2)
                 .clipped()
             
         }

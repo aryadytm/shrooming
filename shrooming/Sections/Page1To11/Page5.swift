@@ -26,6 +26,7 @@ struct Page5: View {
                 isVertical: false
             )
             .offset(x: -100)
+            .clipped()
             
             ScrollMoveParallaxObject(
                 imageAsset: "page_5_ds1",
@@ -33,6 +34,7 @@ struct Page5: View {
                 isVertical: false
             )
             .offset(x: 100)
+            .clipped()
             
         }
     }

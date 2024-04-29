@@ -17,6 +17,7 @@ struct Page2Part3: View {
                 isVertical: false
             )
             .offset(x: 130)
+            .clipped()
             
             StaticObject(assetName: "page_2_window_train")
                         

@@ -17,6 +17,7 @@ struct Page2Part1: View {
                 isVertical: false
             )
             .offset(x: 130)
+            .clipped()
             
             StaticObject(assetName: "page_2_window_train")
             
@@ -48,5 +49,6 @@ struct Page2Part1: View {
                 .padding(.top, 500)
                 .padding(.bottom, 800)
         }
+        .scaleEffect(0.8)
     }
 }
