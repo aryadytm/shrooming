@@ -11,10 +11,11 @@ struct Page3Part2: View {
     var body: some View {
         ZStack(alignment: .center) {
             
-            StaticObject(assetName: "page_3_1_layer_1")
+            StaticObject(assetName: "page_3_bg")
+                .opacity(0.5)
             
             ScrollZoomParallaxObject(
-                imageAsset: "page_3_1_layer_10",
+                imageAsset: "page_3_freshbear",
                 zoomMultiplier: 0.3
             )
             
@@ -26,7 +27,7 @@ struct Page3Part2: View {
     ScrollView {
         VStack {
             Page3Part2()
-                .padding(.top, 500)
+                .padding(.top, 600)
                 .padding(.bottom, 800)
         }
     }

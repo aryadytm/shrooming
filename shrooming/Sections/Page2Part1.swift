@@ -13,36 +13,26 @@ struct Page2Part1: View {
 
             ScrollMoveParallaxObject(
                 imageAsset: "page_2_layer_1",
-                speedMultiplier: 0.11,
+                speedMultiplier: -0.2,
                 isVertical: false
             )
+            .offset(x: 130)
+            
+            StaticObject(assetName: "page_2_window_train")
+            
+            StaticObject(assetName: "page_2_reflection")
+            StaticObject(assetName: "page_2_reflection")
+            StaticObject(assetName: "page_2_reflection")
+            
+            StaticObject(assetName: "page_2_speed")
+            
+            ScrollMoveParallaxObject(
+                imageAsset: "page_2_hp",
+                speedMultiplier: -0.13,
+                isVertical: true
+            )
+            .offset(y: 125)
             .clipped()
-            
-            StaticObject(assetName: "page_2_layer_2")
-            
-            StaticObject(assetName: "page_2_layer_3_layer_9")
-            StaticObject(assetName: "page_2_layer_3_layer_10")
-            
-            ForEach([0, 1], id: \.self) { i in
-                // Your code for each item here
-                ScrollZoomParallaxObject(
-                    imageAsset: "page_2_layer_3_layer_\(i)",
-                    zoomMultiplier: 0.4
-                )
-                .clipped()
-            }            
-            
-            ForEach([3, 4, 5, 6, 7], id: \.self) { i in
-                // Your code for each item here
-                ScrollMoveParallaxObject(
-                    imageAsset: "page_2_layer_3_layer_\(i)",
-                    speedMultiplier: -0.077,
-                    isVertical: true
-                )
-                .offset(y: 75)
-                .clipped()
-            }
-            
 
         }
     }
@@ -52,7 +42,7 @@ struct Page2Part1: View {
     ScrollView {
         VStack {
             Page2Part1()
-                .padding(.top, 500)
+                .padding(.top, 700)
                 .padding(.bottom, 800)
             Page2Part1()
                 .padding(.top, 500)

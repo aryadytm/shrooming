@@ -23,6 +23,13 @@ struct StaticObject: View {
 struct ScrollZoomParallaxObject: View {
     let imageAsset: String
     let zoomMultiplier: CGFloat
+    let startingScale: CGFloat
+    
+    init(imageAsset: String, zoomMultiplier: CGFloat, startingScale: CGFloat = 1.0) {
+        self.imageAsset = imageAsset
+        self.zoomMultiplier = zoomMultiplier
+        self.startingScale = startingScale
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -30,12 +37,12 @@ struct ScrollZoomParallaxObject: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .scaleEffect(scaleThatChangesWithScroll(geometry: geometry))
-                .clipped()
+//                .clipped()
         }
     }
     
     private func scaleThatChangesWithScroll(geometry: GeometryProxy) -> CGFloat {
-        var scale = 1.0
+        var scale = startingScale
         let yOffset = geometry.frame(in: .global).minY
         let screenHeight = UIScreen.main.bounds.height
         
@@ -45,7 +52,7 @@ struct ScrollZoomParallaxObject: View {
             let bottomOffset = (screenHeight * PARALLAX_SCREEN_PERCENTAGE) - yOffset - (geometry.size.height / 2)
             
             if bottomOffset > 0 {
-                scale = 1 + (bottomOffset / (500 / zoomMultiplier))
+                scale = startingScale + (bottomOffset / (500 / zoomMultiplier))
             }
         }
         return scale
@@ -66,7 +73,7 @@ struct ScrollMoveParallaxObject: View {
                 .aspectRatio(contentMode: .fit)
                 .offset(x: isVertical ? 0 : calculateOffset(geometry: geometry),
                         y: isVertical ? calculateOffset(geometry: geometry) : 0)
-                .clipped()
+//                .clipped()
         }
     }
     
@@ -116,5 +123,35 @@ struct ScrollFadeParallaxObject: View {
             return isDisappearing ? max(0, 1 - abs(opacityChange)) : min(1, abs(opacityChange))
         }
         return 1
+    }
+}
+
+
+struct ScrollShakeParallaxObject: View {
+    let imageAsset: String
+    let shakeStrength: CGFloat
+    
+    var body: some View {
+        GeometryReader { geometry in
+            Image(imageAsset)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .offset(x: calculateShake(geometry: geometry))
+        }
+    }
+    
+    private func calculateShake(geometry: GeometryProxy) -> CGFloat {
+        let yOffset = geometry.frame(in: .global).minY
+        let screenHeight = UIScreen.main.bounds.height
+        
+        // Only apply shake effect when the image is within the visible screen area
+        if yOffset > -geometry.size.height && yOffset < screenHeight {
+            let triggerOffset = screenHeight * PARALLAX_SCREEN_PERCENTAGE
+            let relativeOffset = yOffset - triggerOffset
+            
+            // Apply a sine wave based shake based on the scroll position
+            return sin(relativeOffset / 30) * shakeStrength
+        }
+        return 0
     }
 }

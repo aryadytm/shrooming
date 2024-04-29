@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E63D50842BDF41C7002B4C39 /* Page6.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D50832BDF41C7002B4C39 /* Page6.swift */; };
+		E63D50862BDF55C2002B4C39 /* Page2Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D50852BDF55C1002B4C39 /* Page2Part3.swift */; };
+		E63D50882BDF5CFE002B4C39 /* Page4Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D50872BDF5CFE002B4C39 /* Page4Part2.swift */; };
+		E63D508A2BDF8129002B4C39 /* Page7Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D50892BDF8129002B4C39 /* Page7Part1.swift */; };
 		E6A69F7F2BDCCA10008DE37F /* shroomingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */; };
 		E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F802BDCCA10008DE37F /* ContentView.swift */; };
 		E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A69F822BDCCA12008DE37F /* Assets.xcassets */; };
@@ -25,11 +29,15 @@
 		E6A69FA62BDEA0E9008DE37F /* Page2Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA52BDEA0E9008DE37F /* Page2Part2.swift */; };
 		E6A69FA82BDEA392008DE37F /* Page3Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA72BDEA392008DE37F /* Page3Part1.swift */; };
 		E6A69FAA2BDEA514008DE37F /* Page3Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FA92BDEA514008DE37F /* Page3Part2.swift */; };
-		E6A69FAC2BDEA556008DE37F /* Page4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FAB2BDEA556008DE37F /* Page4.swift */; };
+		E6A69FAC2BDEA556008DE37F /* Page4Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FAB2BDEA556008DE37F /* Page4Part1.swift */; };
 		E6A69FAE2BDEA67C008DE37F /* Page5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69FAD2BDEA67C008DE37F /* Page5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E63D50832BDF41C7002B4C39 /* Page6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page6.swift; sourceTree = "<group>"; };
+		E63D50852BDF55C1002B4C39 /* Page2Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2Part3.swift; sourceTree = "<group>"; };
+		E63D50872BDF5CFE002B4C39 /* Page4Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4Part2.swift; sourceTree = "<group>"; };
+		E63D50892BDF8129002B4C39 /* Page7Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page7Part1.swift; sourceTree = "<group>"; };
 		E6A69F7B2BDCCA10008DE37F /* shrooming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shrooming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shroomingApp.swift; sourceTree = "<group>"; };
 		E6A69F802BDCCA10008DE37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,7 +57,7 @@
 		E6A69FA52BDEA0E9008DE37F /* Page2Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2Part2.swift; sourceTree = "<group>"; };
 		E6A69FA72BDEA392008DE37F /* Page3Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3Part1.swift; sourceTree = "<group>"; };
 		E6A69FA92BDEA514008DE37F /* Page3Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3Part2.swift; sourceTree = "<group>"; };
-		E6A69FAB2BDEA556008DE37F /* Page4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4.swift; sourceTree = "<group>"; };
+		E6A69FAB2BDEA556008DE37F /* Page4Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4Part1.swift; sourceTree = "<group>"; };
 		E6A69FAD2BDEA67C008DE37F /* Page5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,10 +120,14 @@
 				E6A69F9A2BDD2E23008DE37F /* Page1.swift */,
 				E6A69FA32BDE9A39008DE37F /* Page2Part1.swift */,
 				E6A69FA52BDEA0E9008DE37F /* Page2Part2.swift */,
+				E63D50852BDF55C1002B4C39 /* Page2Part3.swift */,
 				E6A69FA72BDEA392008DE37F /* Page3Part1.swift */,
 				E6A69FA92BDEA514008DE37F /* Page3Part2.swift */,
-				E6A69FAB2BDEA556008DE37F /* Page4.swift */,
+				E6A69FAB2BDEA556008DE37F /* Page4Part1.swift */,
+				E63D50872BDF5CFE002B4C39 /* Page4Part2.swift */,
 				E6A69FAD2BDEA67C008DE37F /* Page5.swift */,
+				E63D50832BDF41C7002B4C39 /* Page6.swift */,
+				E63D50892BDF8129002B4C39 /* Page7Part1.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -209,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E63D508A2BDF8129002B4C39 /* Page7Part1.swift in Sources */,
 				E6A69FA22BDE9601008DE37F /* ParallaxUtils.swift in Sources */,
 				E6A69F992BDCF52A008DE37F /* StoryPage.swift in Sources */,
 				E6A69F932BDCDF9B008DE37F /* HomePage.swift in Sources */,
@@ -216,14 +229,17 @@
 				E6A69FAA2BDEA514008DE37F /* Page3Part2.swift in Sources */,
 				E6A69F952BDCDFC1008DE37F /* SuggestionPage.swift in Sources */,
 				E6A69F8D2BDCCAA9008DE37F /* PageController.swift in Sources */,
-				E6A69FAC2BDEA556008DE37F /* Page4.swift in Sources */,
+				E6A69FAC2BDEA556008DE37F /* Page4Part1.swift in Sources */,
 				E6A69FA02BDE9040008DE37F /* LearnParallax.swift in Sources */,
 				E6A69FA42BDE9A39008DE37F /* Page2Part1.swift in Sources */,
+				E63D50842BDF41C7002B4C39 /* Page6.swift in Sources */,
 				E6A69FAE2BDEA67C008DE37F /* Page5.swift in Sources */,
+				E63D50862BDF55C2002B4C39 /* Page2Part3.swift in Sources */,
 				E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */,
 				E6A69F912BDCDF73008DE37F /* SplashPage.swift in Sources */,
 				E6A69FA62BDEA0E9008DE37F /* Page2Part2.swift in Sources */,
 				E6A69FA82BDEA392008DE37F /* Page3Part1.swift in Sources */,
+				E63D50882BDF5CFE002B4C39 /* Page4Part2.swift in Sources */,
 				E6A69F972BDCE1C9008DE37F /* PageControllerViewModel.swift in Sources */,
 				E6A69F7F2BDCCA10008DE37F /* shroomingApp.swift in Sources */,
 				E6A69F9B2BDD2E23008DE37F /* Page1.swift in Sources */,

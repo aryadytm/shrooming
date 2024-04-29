@@ -17,10 +17,13 @@ struct StoryPage: View {
                     .padding(.top, 500)
                 Page2Part1()
                 Page2Part2()
+                Page2Part3()
                 Page3Part1()
                 Page3Part2()
-                Page4()
+                Page4Part1()
+                Page4Part2()
                 Page5()
+                Page6()
                     .padding(.bottom, 500)
                 
             }

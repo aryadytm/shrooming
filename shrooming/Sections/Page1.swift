@@ -3,25 +3,27 @@ import SwiftUI
 struct Page1: View {
         var body: some View {
         ZStack(alignment: .center) {
-            StaticObject(assetName: "page_1_layer_1")
+            StaticObject(assetName: "page_1_sky")
 
             ScrollZoomParallaxObject(
-                imageAsset: "page_1_layer_3",
+                imageAsset: "page_1_building_centre",
                 zoomMultiplier: 0.3
             )
             .clipped()
             
             ScrollZoomParallaxObject(
-                imageAsset: "page_1_layer_4",
+                imageAsset: "page_1_building_left",
                 zoomMultiplier: 1
             )
             .clipped()
             
             ScrollZoomParallaxObject(
-                imageAsset: "page_1_layer_5",
+                imageAsset: "page_1_building_right",
                 zoomMultiplier: 0.5
             )
             .clipped()
+            
+
         }
     }
 }

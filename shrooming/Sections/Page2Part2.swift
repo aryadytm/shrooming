@@ -10,22 +10,28 @@ import SwiftUI
 struct Page2Part2: View {
     var body: some View {
         ZStack(alignment: .center) {
+            // TODO: Pinch Effect
             
-            StaticObject(assetName: "page_2_layer_8_layer_0")
-//            StaticObject(assetName: "page_2_layer_8_layer_1")
-//            StaticObject(assetName: "page_2_layer_8_layer_2")
-            ScrollZoomParallaxObject(
-                imageAsset: "page_2_layer_8_layer_1",
-                zoomMultiplier: 0.15
+            ScrollMoveParallaxObject(
+                imageAsset: "page_2_layer_1",
+                speedMultiplier: -0.2,
+                isVertical: false
             )
-            ScrollZoomParallaxObject(
-                imageAsset: "page_2_layer_8_layer_2",
-                zoomMultiplier: 0.15
-            )
-            ScrollZoomParallaxObject(
-                imageAsset: "page_2_layer_8_layer_3",
-                zoomMultiplier: 0.3
-            )
+            .offset(x: 130)
+            
+            StaticObject(assetName: "page_2_window_train")
+            
+            StaticObject(assetName: "page_2_reflection")
+            StaticObject(assetName: "page_2_reflection")
+            StaticObject(assetName: "page_2_reflection")
+            
+            StaticObject(assetName: "page_2_speed")
+            StaticObject(assetName: "page_2_hp")
+            
+            ScrollZoomParallaxObject(imageAsset: "page_2_transition", zoomMultiplier: 20)
+                .scaleEffect(0.1)
+                .clipped()
+                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
             
         }
     }
@@ -35,10 +41,7 @@ struct Page2Part2: View {
     ScrollView {
         VStack {
             Page2Part2()
-                .padding(.top, 500)
-                .padding(.bottom, 800)
-            Page2Part1()
-                .padding(.top, 500)
+                .padding(.top, 600)
                 .padding(.bottom, 800)
         }
     }

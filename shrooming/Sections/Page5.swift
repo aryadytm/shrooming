@@ -11,28 +11,28 @@ struct Page5: View {
     var body: some View {
         ZStack(alignment: .center) {
             
-            StaticObject(assetName: "page_5_layer_2")
-            
+            StaticObject(assetName: "page_5_bg")
+                .opacity(0.4)
             
             ScrollZoomParallaxObject(
-                imageAsset: "page_5_layer_6_layer_2",
-                zoomMultiplier: -0.32
+                imageAsset: "page_5_connection",
+                zoomMultiplier: -1,
+                startingScale: 2.5
             )
-            .scaleEffect(x: 2, y: 2)
             
             ScrollMoveParallaxObject(
-                imageAsset: "page_5_layer_6_layer_0",
-                speedMultiplier: 0.07,
+                imageAsset: "page_5_ds2",
+                speedMultiplier: 0.1,
                 isVertical: false
             )
-            .offset(x: -50)
+            .offset(x: -100)
             
             ScrollMoveParallaxObject(
-                imageAsset: "page_5_layer_6_layer_1",
-                speedMultiplier: -0.07,
+                imageAsset: "page_5_ds1",
+                speedMultiplier: -0.1,
                 isVertical: false
             )
-            .offset(x: 50)
+            .offset(x: 100)
             
         }
     }
