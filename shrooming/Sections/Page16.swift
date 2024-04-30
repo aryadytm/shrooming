@@ -12,9 +12,14 @@ struct Page16: View {
         ZStack(alignment: .center) {
             StaticObject(assetName: "page_16_bg")
             StaticObject(assetName: "page_16_bed")
-            StaticObject(assetName: "page_16_sleep")
+            
+            ScrollFadeParallaxObject(imageAsset: "page_16_sleep", speedMultiplier: 1.0, isDisappearing: true)
+            ScrollFadeParallaxObject(imageAsset: "page_16_awake", speedMultiplier: 0.7, isDisappearing: false)
+            
 
-            ScrollZoomParallaxObject(imageAsset: "page_16_alarm_clock", zoomMultiplier: 0.01)
+            ScrollShakeParallaxObject(imageAsset: "page_16_alarm_clock", shakeStrength: 3)
+            ScrollShakeParallaxObject(imageAsset: "page_16_vibrate", shakeStrength: 3)
+            
             ScrollFadeParallaxObject(imageAsset: "page_16_vibrate", speedMultiplier: 0.7, isDisappearing: false)
         }
         

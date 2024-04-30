@@ -12,18 +12,14 @@ struct PageController: View {
     
     var body: some View {
         switch viewModel.currentPage {
-            case .splash:
-                SplashPage(viewModel: viewModel)
-            case .home:
-                HomePage(viewModel: viewModel)
-            case .suggestion:
-                SuggestionPage(viewModel: viewModel) 
-            case .story:
-                StoryPage()
-            }
+        case .splash:
+            SplashPage(viewModel: viewModel)
+        case .home:
+            HomePage(viewModel: viewModel)
+        case .suggestion:
+            SuggestionPage(viewModel: viewModel)
+        case .story:
+            StoryPage().environmentObject(viewModel)
+        }
     }
-}
-
-#Preview {
-    PageController()
 }

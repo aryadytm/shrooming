@@ -39,11 +39,16 @@
 		E685AC292BDFE89300A1AB0D /* Page23Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC282BDFE89300A1AB0D /* Page23Part1.swift */; };
 		E685AC2B2BDFE97800A1AB0D /* Page23Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC2A2BDFE97800A1AB0D /* Page23Part2.swift */; };
 		E685AC2D2BDFEAC700A1AB0D /* Page23Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC2C2BDFEAC700A1AB0D /* Page23Part3.swift */; };
-		E685AC2F2BDFEB6C00A1AB0D /* Page24.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC2E2BDFEB6C00A1AB0D /* Page24.swift */; };
+		E685AC2F2BDFEB6C00A1AB0D /* Page24Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC2E2BDFEB6C00A1AB0D /* Page24Part2.swift */; };
 		E685AC312BDFEBAC00A1AB0D /* Page25.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC302BDFEBAC00A1AB0D /* Page25.swift */; };
 		E685AC332BDFF0CD00A1AB0D /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E685AC322BDFF0CD00A1AB0D /* bgmusic.mp3 */; };
 		E685AC352BE02A4700A1AB0D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC342BE02A4700A1AB0D /* Utils.swift */; };
 		E685AC372BE088A600A1AB0D /* windsfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E685AC362BE088A600A1AB0D /* windsfx.mp3 */; };
+		E685AC3A2BE09E9800A1AB0D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E685AC392BE09E9800A1AB0D /* Lottie */; };
+		E685AC402BE09F1600A1AB0D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC3F2BE09F1600A1AB0D /* LottieView.swift */; };
+		E685AC422BE09FA500A1AB0D /* Hand Scroll.json in Resources */ = {isa = PBXBuildFile; fileRef = E685AC412BE09FA500A1AB0D /* Hand Scroll.json */; };
+		E685AC442BE0A0AA00A1AB0D /* LottieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC432BE0A0AA00A1AB0D /* LottieTest.swift */; };
+		E685AC462BE0ABBD00A1AB0D /* Page24Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC452BE0ABBD00A1AB0D /* Page24Part1.swift */; };
 		E6A69F7F2BDCCA10008DE37F /* shroomingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */; };
 		E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F802BDCCA10008DE37F /* ContentView.swift */; };
 		E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A69F822BDCCA12008DE37F /* Assets.xcassets */; };
@@ -99,11 +104,15 @@
 		E685AC282BDFE89300A1AB0D /* Page23Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page23Part1.swift; sourceTree = "<group>"; };
 		E685AC2A2BDFE97800A1AB0D /* Page23Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page23Part2.swift; sourceTree = "<group>"; };
 		E685AC2C2BDFEAC700A1AB0D /* Page23Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page23Part3.swift; sourceTree = "<group>"; };
-		E685AC2E2BDFEB6C00A1AB0D /* Page24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page24.swift; sourceTree = "<group>"; };
+		E685AC2E2BDFEB6C00A1AB0D /* Page24Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page24Part2.swift; sourceTree = "<group>"; };
 		E685AC302BDFEBAC00A1AB0D /* Page25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page25.swift; sourceTree = "<group>"; };
 		E685AC322BDFF0CD00A1AB0D /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
 		E685AC342BE02A4700A1AB0D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E685AC362BE088A600A1AB0D /* windsfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = windsfx.mp3; sourceTree = "<group>"; };
+		E685AC3F2BE09F1600A1AB0D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E685AC412BE09FA500A1AB0D /* Hand Scroll.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Hand Scroll.json"; sourceTree = "<group>"; };
+		E685AC432BE0A0AA00A1AB0D /* LottieTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTest.swift; sourceTree = "<group>"; };
+		E685AC452BE0ABBD00A1AB0D /* Page24Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page24Part1.swift; sourceTree = "<group>"; };
 		E6A69F7B2BDCCA10008DE37F /* shrooming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shrooming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shroomingApp.swift; sourceTree = "<group>"; };
 		E6A69F802BDCCA10008DE37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E685AC3A2BE09E9800A1AB0D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,10 +208,13 @@
 				E6A69F8C2BDCCAA9008DE37F /* PageController.swift */,
 				E6A69F962BDCE1C9008DE37F /* PageControllerViewModel.swift */,
 				E6A69F982BDCF52A008DE37F /* StoryPage.swift */,
+				E685AC3F2BE09F1600A1AB0D /* LottieView.swift */,
+				E685AC432BE0A0AA00A1AB0D /* LottieTest.swift */,
 				E6A69F9F2BDE9040008DE37F /* LearnParallax.swift */,
 				E685AC342BE02A4700A1AB0D /* Utils.swift */,
 				E685AC322BDFF0CD00A1AB0D /* bgmusic.mp3 */,
 				E685AC362BE088A600A1AB0D /* windsfx.mp3 */,
+				E685AC412BE09FA500A1AB0D /* Hand Scroll.json */,
 			);
 			path = shrooming;
 			sourceTree = "<group>";
@@ -233,7 +246,8 @@
 				E685AC282BDFE89300A1AB0D /* Page23Part1.swift */,
 				E685AC2A2BDFE97800A1AB0D /* Page23Part2.swift */,
 				E685AC2C2BDFEAC700A1AB0D /* Page23Part3.swift */,
-				E685AC2E2BDFEB6C00A1AB0D /* Page24.swift */,
+				E685AC452BE0ABBD00A1AB0D /* Page24Part1.swift */,
+				E685AC2E2BDFEB6C00A1AB0D /* Page24Part2.swift */,
 				E685AC302BDFEBAC00A1AB0D /* Page25.swift */,
 			);
 			path = Sections;
@@ -274,6 +288,9 @@
 			dependencies = (
 			);
 			name = shrooming;
+			packageProductDependencies = (
+				E685AC392BE09E9800A1AB0D /* Lottie */,
+			);
 			productName = shrooming;
 			productReference = E6A69F7B2BDCCA10008DE37F /* shrooming.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +319,9 @@
 				Base,
 			);
 			mainGroup = E6A69F722BDCCA10008DE37F;
+			packageReferences = (
+				E685AC382BE09E9800A1AB0D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = E6A69F7C2BDCCA10008DE37F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,6 +339,7 @@
 				E685AC372BE088A600A1AB0D /* windsfx.mp3 in Resources */,
 				E6A69F862BDCCA12008DE37F /* Preview Assets.xcassets in Resources */,
 				E685AC332BDFF0CD00A1AB0D /* bgmusic.mp3 in Resources */,
+				E685AC422BE09FA500A1AB0D /* Hand Scroll.json in Resources */,
 				E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +364,7 @@
 				E685AC0C2BDFC3F800A1AB0D /* Page11Part4.swift in Sources */,
 				E685AC002BDFAFEA00A1AB0D /* Page9Part3.swift in Sources */,
 				E6A69FAA2BDEA514008DE37F /* Page3Part2.swift in Sources */,
-				E685AC2F2BDFEB6C00A1AB0D /* Page24.swift in Sources */,
+				E685AC2F2BDFEB6C00A1AB0D /* Page24Part2.swift in Sources */,
 				E685AC192BDFCC4000A1AB0D /* Page16.swift in Sources */,
 				E6A69F952BDCDFC1008DE37F /* SuggestionPage.swift in Sources */,
 				E6A69F8D2BDCCAA9008DE37F /* PageController.swift in Sources */,
@@ -351,6 +372,7 @@
 				E685AC272BDFE76E00A1AB0D /* Page22.swift in Sources */,
 				E6A69FAC2BDEA556008DE37F /* Page4Part1.swift in Sources */,
 				E6A69FA02BDE9040008DE37F /* LearnParallax.swift in Sources */,
+				E685AC442BE0A0AA00A1AB0D /* LottieTest.swift in Sources */,
 				E615D5E62BDFA0180042CF09 /* Page9Part1.swift in Sources */,
 				E685AC042BDFB1AF00A1AB0D /* Page11Part1.swift in Sources */,
 				E685AC2D2BDFEAC700A1AB0D /* Page23Part3.swift in Sources */,
@@ -360,6 +382,7 @@
 				E685AC0A2BDFBCF800A1AB0D /* Page11Part3.swift in Sources */,
 				E685AC1D2BDFCFB000A1AB0D /* Page18.swift in Sources */,
 				E63D50842BDF41C7002B4C39 /* Page6.swift in Sources */,
+				E685AC462BE0ABBD00A1AB0D /* Page24Part1.swift in Sources */,
 				E685AC232BDFE34800A1AB0D /* Page21Part1.swift in Sources */,
 				E685AC1F2BDFD04400A1AB0D /* Page19.swift in Sources */,
 				E615D5E02BDF96C60042CF09 /* Page7Part2.swift in Sources */,
@@ -368,6 +391,7 @@
 				E685AC312BDFEBAC00A1AB0D /* Page25.swift in Sources */,
 				E685AC112BDFC5A200A1AB0D /* Page12.swift in Sources */,
 				E685AC172BDFC7DC00A1AB0D /* Page15.swift in Sources */,
+				E685AC402BE09F1600A1AB0D /* LottieView.swift in Sources */,
 				E63D50862BDF55C2002B4C39 /* Page2Part3.swift in Sources */,
 				E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */,
 				E6A69F912BDCDF73008DE37F /* SplashPage.swift in Sources */,
@@ -590,6 +614,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E685AC382BE09E9800A1AB0D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E685AC392BE09E9800A1AB0D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E685AC382BE09E9800A1AB0D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E6A69F732BDCCA10008DE37F /* Project object */;
 }

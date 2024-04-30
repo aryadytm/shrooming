@@ -6,14 +6,12 @@
 //
 // TODO:
 //
-// Ada SFX wind" sebelum mulai musik
-// Lagu mulai di halaman suggestion
+// X Ada SFX wind" sebelum mulai musik
+// CANCELLED Lagu mulai di halaman suggestion
 // X Volume pake coret
 // X Boneka no bg
-// Ortu efek shake
-// Alarm pake shake
-//
-//
+// X Ortu efek shake
+// X Alarm pake shake
 //
 
 import SwiftUI
@@ -25,31 +23,21 @@ struct StoryPage: View {
     @State private var isSoundOn: Bool = true
     @State private var currentSection: Int = 1 // 1 for first section, 2 for second section
     @EnvironmentObject var orientationInfo: OrientationInfo
-    
-    private var audioPlayer: AVAudioPlayer?
+    @EnvironmentObject var viewModel: PageControllerViewModel
     
     init() {
-        // Initialize the audio player with the background music
-        if let bgMusicURL = Bundle.main.url(forResource: "bgmusic", withExtension: "mp3") {
-            do {
-                let player = try AVAudioPlayer(contentsOf: bgMusicURL)
-                player.numberOfLoops = -1 // Loop indefinitely
-                self.audioPlayer = player
-            } catch {
-                print("Failed to initialize audio player: \(error)")
-            }
-        }
     }
     
     var body: some View {
         ZStack {
+
             if currentSection == 1 {
                 SectionOne(currentSection: $currentSection)
             } else {
                 SectionTwo(currentSection: $currentSection)
             }
 //            Stories()
-            
+
             // Sound toggle button
             VStack {
                 HStack {
@@ -66,11 +54,13 @@ struct StoryPage: View {
                 }
                 Spacer()
             }
+            
+
         }
         .opacity(opacity)
         .onAppear {
             if isSoundOn {
-                audioPlayer?.play()
+                viewModel.bgPlayer?.play()
             }
             withAnimation(.easeIn(duration: 2.0)) {
                 opacity = 1.0
@@ -81,9 +71,9 @@ struct StoryPage: View {
     func toggleSound() {
         isSoundOn.toggle()
         if isSoundOn {
-            audioPlayer?.play()
+            viewModel.bgPlayer?.play()
         } else {
-            audioPlayer?.pause()
+            viewModel.bgPlayer?.pause()
         }
     }
 }
@@ -96,6 +86,11 @@ struct SectionOne: View {
         ScrollView(showsIndicators: false) {
             VStack {
                 LazyVStack(spacing: !orientationInfo.isLandscape ? 500 : 100) {
+                    ZStack {
+                        LottieView(name: "Hand Scroll", loopMode: .loop)
+                            .scaleEffect(/*@START_MENU_TOKEN@*/CGSize(width: 1.0, height: 1.0)/*@END_MENU_TOKEN@*/)
+                    }
+                    .frame(width: 200, height: 200)
                     Page1()
                     Page2Part1()
                     Page2Part2()
@@ -137,7 +132,7 @@ struct SectionTwo: View {
     @Binding var currentSection: Int
     
     var body: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             LazyVStack(spacing: !orientationInfo.isLandscape ? 500 : 100) {
                 ArrowButton(direction: .up) {
                     withAnimation {
@@ -166,12 +161,13 @@ struct SectionTwo: View {
                 Page23Part1()
                 Page23Part2()
                 Page23Part3()
-                Page24()
+                Page24Part1()
+                Page24Part2()
                 Page25()
-                Page25().opacity(0)
-                Page25().opacity(0)
+                Page25().opacity(0).frame(height: 1)
+                Page25().opacity(0).frame(height: 1)
             }
-            .padding(.bottom, !orientationInfo.isLandscape ? 300 : 10)
+            .padding(.bottom, !orientationInfo.isLandscape ? 1 : 10)
             .scaleEffect(orientationInfo.isLandscape ? 0.6 : 1)
             .offset(y: orientationInfo.isLandscape ? -2200 : 0)
             .clipped()
@@ -244,7 +240,8 @@ struct Stories: View {
             Page23Part1()
             Page23Part2()
             Page23Part3()
-            Page24()
+            Page24Part1()
+            Page24Part2()
             Page25()
         }
         .padding(.bottom, !orientationInfo.isLandscape ? 300 : 10)
@@ -257,4 +254,5 @@ struct Stories: View {
 #Preview {
     StoryPage()
         .environmentObject(OrientationInfo())
+        .environmentObject(PageControllerViewModel())
 }

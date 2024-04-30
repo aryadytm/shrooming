@@ -14,9 +14,11 @@ struct Page9Part3: View {
             StaticObject(assetName: "page_9_sky")
                 .opacity(0)
             
-            ScrollZoomParallaxObject(imageAsset: "page_9_child2", zoomMultiplier: 0.1)
+            ScrollZoomParallaxObject(imageAsset: "page_9_child2", zoomMultiplier: 0.2)
                 .clipped()
-            ScrollZoomParallaxObject(imageAsset: "page_9_parents", zoomMultiplier: 0.2)
+            
+            ScrollShakeParallaxObject(imageAsset: "page_9_parents", shakeStrength: 3)
+            
 
         }
         
