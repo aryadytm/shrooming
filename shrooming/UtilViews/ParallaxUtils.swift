@@ -8,13 +8,13 @@
 import SwiftUI
 
 let PARALLAX_SCREEN_PERCENTAGE = 0.99
-
+let IMAGE_QUALITY = 0.7
 
 struct StaticObject: View {
     var assetName: String
     
     var body: some View {
-        Image(assetName)
+        loadImage(named: assetName, withQuality: IMAGE_QUALITY)
             .resizable()
             .aspectRatio(contentMode: .fit)
     }
@@ -33,7 +33,7 @@ struct ScrollZoomParallaxObject: View {
     
     var body: some View {
         GeometryReader { geometry in
-            Image(imageAsset)
+            loadImage(named: imageAsset, withQuality: IMAGE_QUALITY)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .scaleEffect(scaleThatChangesWithScroll(geometry: geometry))
@@ -67,7 +67,7 @@ struct ScrollMoveParallaxObject: View {
     
     var body: some View {
         GeometryReader { geometry in
-            Image(imageAsset)
+            loadImage(named: imageAsset, withQuality: IMAGE_QUALITY)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .offset(x: isVertical ? 0 : calculateOffset(geometry: geometry),
@@ -102,7 +102,7 @@ struct ScrollFadeParallaxObject: View {
     
     var body: some View {
         GeometryReader { geometry in
-            Image(imageAsset)
+            loadImage(named: imageAsset, withQuality: IMAGE_QUALITY)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .opacity(calculateOpacity(geometry: geometry))
@@ -131,7 +131,7 @@ struct ScrollShakeParallaxObject: View {
     
     var body: some View {
         GeometryReader { geometry in
-            Image(imageAsset)
+            loadImage(named: imageAsset, withQuality: IMAGE_QUALITY)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .offset(x: calculateShake(geometry: geometry))
@@ -160,7 +160,7 @@ struct ScrollRotateParallaxObject: View {
     
     var body: some View {
         GeometryReader { geometry in
-            Image(imageAsset)
+            loadImage(named: imageAsset, withQuality: IMAGE_QUALITY)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .rotationEffect(.degrees(calculateRotation(geometry: geometry)))

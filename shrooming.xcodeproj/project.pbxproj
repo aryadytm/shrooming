@@ -42,6 +42,8 @@
 		E685AC2F2BDFEB6C00A1AB0D /* Page24.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC2E2BDFEB6C00A1AB0D /* Page24.swift */; };
 		E685AC312BDFEBAC00A1AB0D /* Page25.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC302BDFEBAC00A1AB0D /* Page25.swift */; };
 		E685AC332BDFF0CD00A1AB0D /* bgmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E685AC322BDFF0CD00A1AB0D /* bgmusic.mp3 */; };
+		E685AC352BE02A4700A1AB0D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC342BE02A4700A1AB0D /* Utils.swift */; };
+		E685AC372BE088A600A1AB0D /* windsfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E685AC362BE088A600A1AB0D /* windsfx.mp3 */; };
 		E6A69F7F2BDCCA10008DE37F /* shroomingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */; };
 		E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F802BDCCA10008DE37F /* ContentView.swift */; };
 		E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A69F822BDCCA12008DE37F /* Assets.xcassets */; };
@@ -100,6 +102,8 @@
 		E685AC2E2BDFEB6C00A1AB0D /* Page24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page24.swift; sourceTree = "<group>"; };
 		E685AC302BDFEBAC00A1AB0D /* Page25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page25.swift; sourceTree = "<group>"; };
 		E685AC322BDFF0CD00A1AB0D /* bgmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgmusic.mp3; sourceTree = "<group>"; };
+		E685AC342BE02A4700A1AB0D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E685AC362BE088A600A1AB0D /* windsfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = windsfx.mp3; sourceTree = "<group>"; };
 		E6A69F7B2BDCCA10008DE37F /* shrooming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shrooming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shroomingApp.swift; sourceTree = "<group>"; };
 		E6A69F802BDCCA10008DE37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,7 +199,9 @@
 				E6A69F962BDCE1C9008DE37F /* PageControllerViewModel.swift */,
 				E6A69F982BDCF52A008DE37F /* StoryPage.swift */,
 				E6A69F9F2BDE9040008DE37F /* LearnParallax.swift */,
+				E685AC342BE02A4700A1AB0D /* Utils.swift */,
 				E685AC322BDFF0CD00A1AB0D /* bgmusic.mp3 */,
+				E685AC362BE088A600A1AB0D /* windsfx.mp3 */,
 			);
 			path = shrooming;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E685AC372BE088A600A1AB0D /* windsfx.mp3 in Resources */,
 				E6A69F862BDCCA12008DE37F /* Preview Assets.xcassets in Resources */,
 				E685AC332BDFF0CD00A1AB0D /* bgmusic.mp3 in Resources */,
 				E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */,
@@ -365,6 +372,7 @@
 				E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */,
 				E6A69F912BDCDF73008DE37F /* SplashPage.swift in Sources */,
 				E685AC212BDFE16100A1AB0D /* Page20.swift in Sources */,
+				E685AC352BE02A4700A1AB0D /* Utils.swift in Sources */,
 				E6A69FA62BDEA0E9008DE37F /* Page2Part2.swift in Sources */,
 				E685AC132BDFC66800A1AB0D /* Page13.swift in Sources */,
 				E6A69FA82BDEA392008DE37F /* Page3Part1.swift in Sources */,

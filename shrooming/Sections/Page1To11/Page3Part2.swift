@@ -12,7 +12,7 @@ struct Page3Part2: View {
         ZStack(alignment: .center) {
             
             StaticObject(assetName: "page_3_bg")
-                .opacity(0.5)
+                .opacity(0)
             
             ScrollZoomParallaxObject(
                 imageAsset: "page_3_freshbear",

@@ -13,7 +13,6 @@ struct ContentView: View {
     var body: some View {
         PageController()
             .environmentObject(OrientationInfo())
-//            .background(.bgcolor)
     }
 }
 
