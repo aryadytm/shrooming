@@ -15,7 +15,7 @@ struct Page6: View {
                 .opacity(0.5)
             StaticObject(assetName: "page_6_table")
             StaticObject(assetName: "page_6_hug")
-            StaticObject(assetName: "page_6_face_sketch")
+            StaticObject(assetName: "page_6_face sketch")
             
             ScrollShakeParallaxObject(
                 imageAsset: "page_6_face_sketch",

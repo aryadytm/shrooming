@@ -15,6 +15,7 @@ struct StaticObject: View {
     
     var body: some View {
         loadImage(named: assetName, withQuality: IMAGE_QUALITY)
+//        LazyImage(imageName: <#T##String#>)
             .resizable()
             .aspectRatio(contentMode: .fit)
     }
@@ -181,4 +182,36 @@ struct ScrollRotateParallaxObject: View {
         }
         return 0
     }
+}
+
+struct StaticItem {
+    let assetName: String
+}
+
+struct ScrollZoomParallaxItem {
+    let imageAsset: String
+    let zoomMultiplier: CGFloat
+    let startingScale: CGFloat
+}
+
+struct ScrollMoveParallaxItem {
+    let imageAsset: String
+    let speedMultiplier: CGFloat
+    let isVertical: Bool
+}
+
+struct ScrollFadeParallaxItem {
+    let imageAsset: String
+    let speedMultiplier: CGFloat
+    let isDisappearing: Bool
+}
+
+struct ScrollShakeParallaxItem {
+    let imageAsset: String
+    let shakeStrength: CGFloat
+}
+
+struct ScrollRotateParallaxItem {
+    let imageAsset: String
+    let rotationMultiplier: CGFloat
 }

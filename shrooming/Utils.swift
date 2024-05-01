@@ -9,32 +9,53 @@ import Foundation
 import SwiftUI
 import UIKit
 
-extension UIImage {
-    func compressed(quality: CGFloat) -> UIImage? {
-        guard let data = self.jpegData(compressionQuality: quality) else { return nil }
-        return UIImage(data: data)
-    }
-}
 
-struct CompressedImageView: View {
-    let originalImage: UIImage
+struct LazyImage: View {
+    @State private var image: UIImage?
+    let imageName: String
+    
     var body: some View {
-        if let compressedImage = originalImage.compressed(quality: 0.5) {
-            Image(uiImage: compressedImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-        } else {
-            Text("Failed to compress image")
+        Group {
+            if let image = image {
+                Image(uiImage: image)
+            } else {
+                Image(systemName: "globe")
+            }
+        }
+        .onAppear {
+            loadImage()
+        }
+        .onDisappear {
+            image = nil
+        }
+    }
+    
+    private func loadImage() {
+        if let img = UIImage(named: imageName) {
+            image = img
         }
     }
 }
 
-func loadImage(named name: String, withQuality quality: CGFloat) -> Image {
-    return Image(name)
-    guard let uiImage = UIImage(named: name),
-          let compressedData = uiImage.jpegData(compressionQuality: quality),
-          let compressedImage = UIImage(data: compressedData) else {
-        return Image(systemName: "photo") // Fallback image
+func loadImage(named name: String, withQuality: Double) -> Image {
+    guard let uiImage = UIImage(named: name) else {
+        return Image(name)
     }
-    return Image(uiImage: compressedImage)
+    return Image(uiImage: uiImage)
+}
+
+struct Shaker {
+    static func startShaking(duration: TimeInterval = 5.0, interval: TimeInterval = 0.1) {
+        let totalShakes = Int(duration / interval)
+        var shakes = 0
+        Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { timer in
+            if shakes < totalShakes {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.error)
+                shakes += 1
+            } else {
+                timer.invalidate()
+            }
+        }
+    }
 }

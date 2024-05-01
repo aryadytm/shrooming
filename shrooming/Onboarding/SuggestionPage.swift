@@ -21,7 +21,7 @@ struct SuggestionPage: View {
                     opacity = 1.0
                 }
                 
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                     withAnimation(.easeOut(duration: 1.0)) {
                         opacity = 0
                     }

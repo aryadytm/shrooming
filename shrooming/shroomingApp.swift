@@ -12,6 +12,10 @@ struct shroomingApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//           StoryPage()
+//            StoryPageV2()
+//                .environmentObject(OrientationInfo())
+//                .environmentObject(PageControllerViewModel())
         }
     }
 }

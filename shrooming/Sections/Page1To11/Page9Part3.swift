@@ -11,8 +11,9 @@ struct Page9Part3: View {
     var body: some View {
         ZStack(alignment: .center) {
             
-            StaticObject(assetName: "page_9_sky")
+            StaticObject(assetName: "page_1_sky")
                 .opacity(0)
+                .scaledToFit()
             
             ScrollZoomParallaxObject(imageAsset: "page_9_child2", zoomMultiplier: 0.2)
                 .clipped()

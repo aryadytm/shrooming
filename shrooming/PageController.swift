@@ -19,7 +19,8 @@ struct PageController: View {
         case .suggestion:
             SuggestionPage(viewModel: viewModel)
         case .story:
-            StoryPage().environmentObject(viewModel)
+//            StoryPage().environmentObject(viewModel)
+            StoryPageV2().environmentObject(viewModel)
         }
     }
 }

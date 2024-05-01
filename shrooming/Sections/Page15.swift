@@ -16,7 +16,9 @@ struct Page15: View {
             ScrollZoomParallaxObject(imageAsset: "page_15_girl", zoomMultiplier: 0.01)
                 
         }
-        
+        .onAppear {
+            Shaker.startShaking()
+        }
     }
 }
 

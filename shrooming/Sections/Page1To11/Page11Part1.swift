@@ -17,6 +17,8 @@ struct Page11Part1: View {
             
             ScrollFadeParallaxObject(imageAsset: "page_11_friends1", speedMultiplier: 1.5, isDisappearing: true)
             ScrollFadeParallaxObject(imageAsset: "page_11_friends2", speedMultiplier: 1.0, isDisappearing: true)
+            ScrollFadeParallaxObject(imageAsset: "page_11_friends1face", speedMultiplier: 1.5, isDisappearing: true)
+            ScrollFadeParallaxObject(imageAsset: "page_11_friends2face", speedMultiplier: 1.0, isDisappearing: true)
             ScrollFadeParallaxObject(imageAsset: "page_11_self", speedMultiplier: 0.2, isDisappearing: true)
             
             StaticObject(assetName: "page_11_table")

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct Page2Part1: View {
+    
     var body: some View {
         ZStack(alignment: .center) {
-
             ScrollMoveParallaxObject(
                 imageAsset: "page_2_layer_1",
                 speedMultiplier: -0.2,
@@ -20,11 +20,9 @@ struct Page2Part1: View {
             .clipped()
             
             StaticObject(assetName: "page_2_window_train")
-            
             StaticObject(assetName: "page_2_reflection")
             StaticObject(assetName: "page_2_reflection")
             StaticObject(assetName: "page_2_reflection")
-            
             StaticObject(assetName: "page_2_speed")
             
             ScrollMoveParallaxObject(
@@ -34,21 +32,11 @@ struct Page2Part1: View {
             )
             .offset(y: 125)
             .clipped()
+            
 
         }
-    }
-}
-
-#Preview {
-    ScrollView {
-        VStack {
-            Page2Part1()
-                .padding(.top, 700)
-                .padding(.bottom, 800)
-            Page2Part1()
-                .padding(.top, 500)
-                .padding(.bottom, 800)
+        .onAppear {
+            Shaker.startShaking()
         }
-        .scaleEffect(0.8)
     }
 }

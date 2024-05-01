@@ -22,6 +22,10 @@ struct Page24Part2: View {
             
             StaticObject(assetName: "page_2_window_train")
             
+            Rectangle()
+                .foregroundColor(.yellow)
+                .opacity(0.075)
+            
             StaticObject(assetName: "page_2_reflection")
             StaticObject(assetName: "page_2_reflection")
             StaticObject(assetName: "page_2_reflection")
@@ -35,7 +39,9 @@ struct Page24Part2: View {
             )
             .offset(y: 125)
             .clipped()
-            
+        }
+        .onAppear {
+            Shaker.startShaking(duration: 3.0)
         }
     }
 }
