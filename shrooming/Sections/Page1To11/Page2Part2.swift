@@ -47,22 +47,6 @@ struct Page2Part2: View {
             StaticObject(assetName: "page_2_transition")
                 .opacity(0.8)
                 .scaleEffect(scale) // Apply dynamic scale
-                .gesture(
-                    MagnificationGesture()
-                        .onChanged { value in
-                            withAnimation(.easeOut(duration: 1.0)) {
-                                // Only enlarge if the pinch gesture scale is greater than current scale
-                                if value > 1 {
-                                    self.scale = 10.0
-                                } else {
-                                    self.scale = 0.1 // Reset to minimum scale if pinch-out
-                                }
-                            }
-                        }
-                        .onEnded { value in
- 
-                        }
-                )
                 .offset(x: -15)
                 .clipped()
             
@@ -70,6 +54,24 @@ struct Page2Part2: View {
                 .offset(y: 80)
                 .scaleEffect(2.0)
         }
+        .gesture(
+            MagnificationGesture()
+                .onChanged { value in
+                    if value > 1 {
+                        withAnimation(.easeOut(duration: 1.0)) {
+                            self.scale = 15.0
+                        }
+                    } else {
+                        withAnimation(.easeOut(duration: 1.0)) {
+                            self.scale = 0.1
+                        }
+                    }
+                    
+                }
+                .onEnded { value in
+                    
+                }
+        )
     }
 }
 
