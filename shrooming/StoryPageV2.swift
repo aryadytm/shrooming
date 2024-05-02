@@ -44,7 +44,7 @@ struct StoryPageV2: View {
                         
                     
                     Button(action: resetStory) {
-                        Image(systemName: "arrow.counterclockwise.circle.fill")
+                        Image(systemName: "house.fill")
                             .resizable()
                             .frame(width: 50, height: 50)
                             .padding()
@@ -52,6 +52,7 @@ struct StoryPageV2: View {
                     .foregroundColor(.white)
                     .opacity(0.5)
                     .padding(.top, 200)
+                    .offset(y: -100)
                     
                     if currentSection == 1 {
                         Button(action: switchToSectionTwo) {
@@ -116,14 +117,15 @@ struct StoryPageV2: View {
     }
     
     func resetStory() {
-        currentSection = 0
-        
-        withAnimation {
-            activeSection = AnyView(EmptyView())
-        }
-        withAnimation(.easeInOut(duration: 1.5)) {
-            activeSection = AnyView(AllSections())
-        }
+        viewModel.setCurrentPage(page: .home)
+//        currentSection = 0
+//        
+//        withAnimation {
+//            activeSection = AnyView(EmptyView())
+//        }
+//        withAnimation(.easeInOut(duration: 1.5)) {
+//            activeSection = AnyView(AllSections())
+//        }
     }
     
     func switchToSectionOne() {

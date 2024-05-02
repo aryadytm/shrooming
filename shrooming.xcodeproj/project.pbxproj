@@ -50,6 +50,8 @@
 		E685AC442BE0A0AA00A1AB0D /* LottieTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC432BE0A0AA00A1AB0D /* LottieTest.swift */; };
 		E685AC462BE0ABBD00A1AB0D /* Page24Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC452BE0ABBD00A1AB0D /* Page24Part1.swift */; };
 		E685AC482BE2399E00A1AB0D /* StoryPageV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E685AC472BE2399E00A1AB0D /* StoryPageV2.swift */; };
+		E685AC4A2BE32D8500A1AB0D /* Hand Tap.json in Resources */ = {isa = PBXBuildFile; fileRef = E685AC492BE32D8500A1AB0D /* Hand Tap.json */; };
+		E685AC4C2BE32D8E00A1AB0D /* Hand Pinch.json in Resources */ = {isa = PBXBuildFile; fileRef = E685AC4B2BE32D8E00A1AB0D /* Hand Pinch.json */; };
 		E6A69F7F2BDCCA10008DE37F /* shroomingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */; };
 		E6A69F812BDCCA10008DE37F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A69F802BDCCA10008DE37F /* ContentView.swift */; };
 		E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A69F822BDCCA12008DE37F /* Assets.xcassets */; };
@@ -115,6 +117,8 @@
 		E685AC432BE0A0AA00A1AB0D /* LottieTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTest.swift; sourceTree = "<group>"; };
 		E685AC452BE0ABBD00A1AB0D /* Page24Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page24Part1.swift; sourceTree = "<group>"; };
 		E685AC472BE2399E00A1AB0D /* StoryPageV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPageV2.swift; sourceTree = "<group>"; };
+		E685AC492BE32D8500A1AB0D /* Hand Tap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Hand Tap.json"; sourceTree = "<group>"; };
+		E685AC4B2BE32D8E00A1AB0D /* Hand Pinch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Hand Pinch.json"; sourceTree = "<group>"; };
 		E6A69F7B2BDCCA10008DE37F /* shrooming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shrooming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A69F7E2BDCCA10008DE37F /* shroomingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shroomingApp.swift; sourceTree = "<group>"; };
 		E6A69F802BDCCA10008DE37F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 				E685AC432BE0A0AA00A1AB0D /* LottieTest.swift */,
 				E6A69F9F2BDE9040008DE37F /* LearnParallax.swift */,
 				E685AC342BE02A4700A1AB0D /* Utils.swift */,
+				E685AC492BE32D8500A1AB0D /* Hand Tap.json */,
+				E685AC4B2BE32D8E00A1AB0D /* Hand Pinch.json */,
 				E685AC322BDFF0CD00A1AB0D /* bgmusic.mp3 */,
 				E685AC362BE088A600A1AB0D /* windsfx.mp3 */,
 				E685AC412BE09FA500A1AB0D /* Hand Scroll.json */,
@@ -342,6 +348,8 @@
 				E685AC372BE088A600A1AB0D /* windsfx.mp3 in Resources */,
 				E6A69F862BDCCA12008DE37F /* Preview Assets.xcassets in Resources */,
 				E685AC332BDFF0CD00A1AB0D /* bgmusic.mp3 in Resources */,
+				E685AC4A2BE32D8500A1AB0D /* Hand Tap.json in Resources */,
+				E685AC4C2BE32D8E00A1AB0D /* Hand Pinch.json in Resources */,
 				E685AC422BE09FA500A1AB0D /* Hand Scroll.json in Resources */,
 				E6A69F832BDCCA12008DE37F /* Assets.xcassets in Resources */,
 			);

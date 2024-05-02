@@ -30,10 +30,15 @@ struct Page16: View {
             ScrollShakeParallaxObject(imageAsset: "page_16_vibrate", shakeStrength: 3)
             
             ScrollFadeParallaxObject(imageAsset: "page_16_vibrate", speedMultiplier: 0.7, isDisappearing: false)
+//            
+//            Image(systemName: "hand.tap.fill")
+//                .offset(y: 80)
+//                .scaleEffect(2.0)
             
-            Image(systemName: "hand.tap.fill")
-                .offset(y: 80)
-                .scaleEffect(2.0)
+            LottieView(name: "Hand Tap", loopMode: .loop)
+                .frame(width: 120, height: 120)
+                .offset(y: 180)
+                .opacity(0.8)
             
         }
         .onTapGesture {

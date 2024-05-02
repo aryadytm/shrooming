@@ -37,7 +37,7 @@ struct Page2Part2: View {
                     imageAsset: "page_2_transition", 
                     zoomMultiplier: 25
                 )
-                    .scaleEffect(0.1)
+                    .scaleEffect(0.06)
                     .opacity(0.25)
                     .offset(x: -15)
             }
@@ -50,9 +50,14 @@ struct Page2Part2: View {
                 .offset(x: -15)
                 .clipped()
             
-            Image(systemName: "hand.draw")
-                .offset(y: 80)
-                .scaleEffect(2.0)
+//            Image(systemName: "hand.draw")
+//                .offset(y: 80)
+//                .scaleEffect(2.0)
+            
+            LottieView(name: "Hand Pinch", loopMode: .loop)
+                .frame(width: 120, height: 120)
+                .offset(y: 180)
+                .opacity(0.8)
         }
         .gesture(
             MagnificationGesture()
